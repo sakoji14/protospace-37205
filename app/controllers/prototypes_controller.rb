@@ -54,7 +54,7 @@ class PrototypesController < ApplicationController
   end
 
   def move_to_index
-    @prototypes = Prototype.find(params[:id])
-    redirect_to root_path unless current_user == @prototypes.user
+    @prototypes = Prototype.new
+    # redirect_to root_path unless current_user == @prototypes.user
   end
 end
